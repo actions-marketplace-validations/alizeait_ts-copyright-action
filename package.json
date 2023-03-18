@@ -12,9 +12,9 @@
     "start": "ts-node ./src/index.ts"
   },
   "sideEffects": false,
-  "homepage": "https://github.com/alizeait/tinyaddress#readme",
+  "homepage": "https://github.com/alizeait/ts-copyright-action#readme",
   "bugs": {
-    "url": "https://github.com/alizeait/tinyaddress/issues"
+    "url": "https://github.com/alizeait/ts-copyright-action/issues"
   },
   "author": {
     "name": "Ali Zeaiter",
@@ -23,7 +23,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alizeait/tinyaddress.git"
+    "url": "git+https://github.com/alizeait/ts-copyright-action.git"
   },
   "files": [
     "dist/**"

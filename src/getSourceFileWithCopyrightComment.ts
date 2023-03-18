@@ -25,7 +25,7 @@ export function getSourceFileWithCopyrightComment(
   removeCopyrightCommentFromSourceFile(node, copyrightCommentRange);
 
   node.text =
-    `/*\n  ${text.replace(/\n/g, "\n  ")} \n*/${
+    `/*\n  ${text.replace(/[\\]*\\n|\n/g, "\n  ")} \n*/${
       node.text.startsWith("\n") ? "" : "\n\n"
     }` + node.text;
 

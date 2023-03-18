@@ -1,1 +1,1 @@
-# jsdoc-file-prepend
+# ts-copyright-action

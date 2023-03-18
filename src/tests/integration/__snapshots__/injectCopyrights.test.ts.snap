@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`injectCopyright Adds comments to all matched files 1`] = `
+{
+  "file": "/fixtures/with-multiple-comments.ts",
+  "fileWithCopyright": "/*
+  Copyright (c) XXX Platforms, Inc. and affiliates.
+  This source code is licensed under the MIT license found in the
+  LICENSE file in the root directory of this source tree. 
+*/
+
+import fs from "fs";
+import ts from "typescript";
+
+/*
+  Copyright (c) YYY Platforms, Inc. and affiliates.
+*/
+const node: ts.SourceFile = ts.createSourceFile(
+  "x.ts", // fileName
+  fs.readFileSync("./src/ts.ts", "utf8"), // sourceText
+  ts.ScriptTarget.Latest // langugeVersion
+);
+console.log(node);
+",
+}
+`;
+
+exports[`injectCopyright Adds comments to all matched files 2`] = `
+{
+  "file": "/fixtures/with-multiple-comments.js",
+  "fileWithCopyright": "/*
+  Copyright (c) XXX Platforms, Inc. and affiliates.
+  This source code is licensed under the MIT license found in the
+  LICENSE file in the root directory of this source tree. 
+*/
+
+import fs from "fs";
+import ts from "typescript";
+
+/*
+  Copyright (c) YYY Platforms, Inc. and affiliates.
+*/
+const node = ts.createSourceFile(
+  "x.ts", // fileName
+  fs.readFileSync("./src/ts.ts", "utf8"), // sourceText
+  ts.ScriptTarget.Latest // langugeVersion
+);
+console.log(node);
+",
+}
+`;
+
+exports[`injectCopyright Adds comments to all matched files 3`] = `
+{
+  "file": "/fixtures/with-comment.ts",
+  "fileWithCopyright": "/*
+  Copyright (c) XXX Platforms, Inc. and affiliates.
+  This source code is licensed under the MIT license found in the
+  LICENSE file in the root directory of this source tree. 
+*/
+
+import fs from "fs";
+import ts from "typescript";
+
+const node: ts.SourceFile = ts.createSourceFile(
+  "x.ts", // fileName
+  fs.readFileSync("./src/ts.ts", "utf8"), // sourceText
+  ts.ScriptTarget.Latest // langugeVersion
+);
+console.log(node);
+",
+}
+`;
+
+exports[`injectCopyright Adds comments to all matched files 4`] = `
+{
+  "file": "/fixtures/with-comment.js",
+  "fileWithCopyright": "/*
+  Copyright (c) XXX Platforms, Inc. and affiliates.
+  This source code is licensed under the MIT license found in the
+  LICENSE file in the root directory of this source tree. 
+*/
+
+import fs from "fs";
+import ts from "typescript";
+
+const node = ts.createSourceFile(
+  "x.ts", // fileName
+  fs.readFileSync("./src/ts.ts", "utf8"), // sourceText
+  ts.ScriptTarget.Latest // langugeVersion
+);
+console.log(node);
+",
+}
+`;
+
+exports[`injectCopyright Adds comments to all matched files 5`] = `
+{
+  "file": "/fixtures/no-comment.ts",
+  "fileWithCopyright": "/*
+  Copyright (c) XXX Platforms, Inc. and affiliates.
+  This source code is licensed under the MIT license found in the
+  LICENSE file in the root directory of this source tree. 
+*/
+
+import fs from "fs";
+import ts from "typescript";
+
+const node: ts.SourceFile = ts.createSourceFile(
+  "x.ts", // fileName
+  fs.readFileSync("./src/ts.ts", "utf8"), // sourceText
+  ts.ScriptTarget.Latest // langugeVersion
+);
+console.log(node);
+",
+}
+`;
+
+exports[`injectCopyright Adds comments to all matched files 6`] = `
+{
+  "file": "/fixtures/no-comment.js",
+  "fileWithCopyright": "/*
+  Copyright (c) XXX Platforms, Inc. and affiliates.
+  This source code is licensed under the MIT license found in the
+  LICENSE file in the root directory of this source tree. 
+*/
+
+import fs from "fs";
+import ts from "typescript";
+
+const node = ts.createSourceFile(
+  "x.ts", // fileName
+  fs.readFileSync("./src/ts.ts", "utf8"), // sourceText
+  ts.ScriptTarget.Latest // langugeVersion
+);
+console.log(node);
+",
+}
+`;

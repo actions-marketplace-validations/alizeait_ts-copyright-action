@@ -11,7 +11,7 @@ export async function injectCopyright() {
 
   const files = await findFiles(inputs.pattern, inputs.exclude);
 
-  debug("Found the following files" + JSON.stringify(files, null, 2));
+  debug("Found the following files:" + JSON.stringify(files, null, 2));
 
   await Promise.all(
     files.map(async (file) => {

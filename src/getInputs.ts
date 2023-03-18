@@ -17,7 +17,7 @@ interface Inputs {
 export function getInputs(): Inputs {
   return {
     copyright: core.getInput("copyright"),
-    pattern: core.getInput("pattern"),
-    exclude: core.getInput("exclude"),
+    pattern: core.getInput("pattern") || undefined,
+    exclude: core.getInput("exclude") || undefined,
   };
 }

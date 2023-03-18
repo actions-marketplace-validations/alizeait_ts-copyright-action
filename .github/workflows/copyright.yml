@@ -8,13 +8,12 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
-      - name: Use Node.js
+      - name: Add Copyright Comment
         uses: "./"
         with:
           copyright: Copyright (c) 2023 Ali Zeaiter.\nThis source code is licensed under the MIT license found in the\nLICENSE file in the root directory of this source tree.

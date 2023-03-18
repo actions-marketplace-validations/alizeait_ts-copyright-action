@@ -20,7 +20,11 @@
     "name": "Ali Zeaiter",
     "email": "rassoali.arz@gmail.com"
   },
-  "keywords": [],
+  "keywords": [
+    "copyright",
+    "comment",
+    "action"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alizeait/ts-copyright-action.git"

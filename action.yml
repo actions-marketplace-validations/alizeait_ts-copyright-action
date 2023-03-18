@@ -1,0 +1,15 @@
+name: "ts-copyright-action"
+description: "Adds Copyright text to TypeScript and JavaScript files"
+inputs:
+  copyright:
+    description: "Copyright comment to prepend to the file"
+    required: true
+  pattern:
+    description: "Glob pattern to find ts/js files. Default is **/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"
+    required: false
+  exclude:
+    description: "Comma seperated glob patterns to exclude from glob search"
+    required: false
+runs:
+  using: "node16"
+  main: "dist/index.js"

@@ -26,8 +26,7 @@ export async function injectCopyright() {
         contents,
         inputs.copyright
       );
-      debug("File:" + file);
-      debug("File content:" + contentsWithComment);
+      debug("Writing file:" + file);
       return writeFile(file, contentsWithComment);
     })
   );

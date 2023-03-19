@@ -5,10 +5,10 @@ inputs:
     description: "Copyright comment to prepend to the file"
     required: true
   pattern:
-    description: "Glob pattern to find ts/js files. Default is **/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"
+    description: "Glob pattern to find ts/js files. Default is '**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}'"
     required: false
   exclude:
-    description: "Comma seperated glob patterns to exclude from glob search"
+    description: "Comma seperated glob patterns to exclude from glob search. Default is 'node_modules/**,dist/**,build/**,coverage/**'"
     required: false
 runs:
   using: "node16"

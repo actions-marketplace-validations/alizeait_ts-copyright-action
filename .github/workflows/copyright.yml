@@ -24,4 +24,5 @@ jobs:
         with:
           commit-message: Add copyright comment to files
           title: Add Copyright Comment to Files
+          body: Update Copyright text
           token: ${{ secrets.TOKEN }}

@@ -1,5 +1,8 @@
 name: "ts-copyright-action"
 description: "Adds Copyright text to TypeScript and JavaScript files"
+branding:
+  icon: briefcase
+  color: gray-dark
 inputs:
   copyright:
     description: "Copyright comment to prepend to the file"
